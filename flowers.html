@@ -3,15 +3,16 @@
  <head>
      <meta charset="UTF-8">
      <title>Фотоплёнка хитрого Лиса</title>
-     <link rel="stylesheet" href="style3.css">
+     <link rel="stylesheet" href="./style/style3.css">
      <link rel="shortcut icon" href="/img/favicon.png" type="image/png">
+     <link rel="stylesheet" href="./style/lightgallery.min.css">
  </head>
  <body>
     <div class="container">
         <header>
             <h1>Фотоплёнка хитрого Лиса</h1>
             <nav>
-                <a href="./index.html">Главная<a>
+                <a href="./index.html">Главная</a>
                 <a>/</a>
                 <a href="./gallery.html">Фото</a>
             </nav>
@@ -21,7 +22,7 @@
         </div>
         <div class="main">
             <div class="left">
-            <div class="photo">
+            <div class="photo" id="lightgallery">
                 <a rel="nofollow" target="_blank" href="./img/photoG/Цветы/1.jpg">
                     <img src="./img/photoG/Цветы/1.jpg" alt="Фото_Природы">
                 </a>
@@ -80,5 +81,9 @@
             <p>Сайт в разработке<p>
         </footer>
     </div>
+    <script src="./js/lightgallery.min.js"></script>
+    <script>
+        lightGallery(document.getElementById('lightgallery'));
+    </script>
  </body>
  </html>
